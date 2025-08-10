@@ -1,6 +1,5 @@
 export default ({ env }) => ({
   name: 'iti-strapi',
-  env: env('NODE_ENV', 'development'),
   debug: env.bool('DEBUG', false),
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),

@@ -9,6 +9,4 @@ export default [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
-  // Development middleware - only loaded in development mode
-  ...(process.env.NODE_ENV === 'development' ? ['strapi::dev'] : []),
 ];
