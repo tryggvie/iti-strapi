@@ -1,13 +1,10 @@
 [build]
 builder = "nixpacks"
+buildCommand = "npm ci && npm run build"
 
 [deploy]
 startCommand = "npm start"
-healthcheckPath = "/admin"
+healthcheckPath = "/"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 10
-
-[deploy.envs]
-NODE_ENV = "production"
-DATABASE_CLIENT = "postgres"
