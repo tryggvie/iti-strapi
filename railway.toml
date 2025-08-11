@@ -1,11 +1,10 @@
 [build]
 builder = "nixpacks"
-# install WITH dev-deps and avoid the cache/rmdir issue
 buildCommand = "NPM_CONFIG_PRODUCTION=false npm install --no-audit --no-fund && npm run build"
 
 [deploy]
 startCommand = "npm start"
-healthcheckPath = "/"
+healthcheckPath = "/_health"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 10
