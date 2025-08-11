@@ -41,6 +41,22 @@
     },
     "content": {
       "type": "blocks"
+    },
+    "intro": {
+      "type": "blocks",
+      "displayName": "Introduction"
+    },
+    "mainContent": {
+      "type": "blocks",
+      "displayName": "Main Content"
+    },
+    "safetyNotes": {
+      "type": "blocks",
+      "displayName": "Safety Notes"
+    },
+    "relatedContent": {
+      "type": "blocks",
+      "displayName": "Related Content"
     }
   }
 }
